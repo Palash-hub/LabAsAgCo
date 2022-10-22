@@ -4,10 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
- public class B
- {
-        public void PropertyB() { }
+public class B
+{
+
+    public A a;
+
+    public B() { }
+
+    public void PropertyB() { }
 
 
- }
+}
 

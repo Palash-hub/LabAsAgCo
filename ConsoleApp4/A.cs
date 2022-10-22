@@ -5,8 +5,28 @@ using System.Text;
 using System.Threading.Tasks;
 
 public class A
-    {
-        public B b = new B();
+{
+    public B b;
 
-        public void PropertyA() { }
+    public A()
+    {
+        //this.b = new B();
     }
+
+    public B B
+    {
+        get => default;
+        set
+        {
+        }
+    }
+
+    public void PropertyA() { }
+
+
+
+    public void Add(B b)
+    {
+        this.b = b;
+    }
+}
